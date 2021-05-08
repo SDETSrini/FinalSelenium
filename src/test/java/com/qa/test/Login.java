@@ -1,5 +1,14 @@
 package com.qa.test;
 
-public class Login {
+import org.testng.annotations.Test;
 
+import com.qa.core.Base;
+
+public class Login extends Base {
+
+	@Test
+	public void TC001() {
+		browserSetup();
+		passSiteURL();
+	}
 }
