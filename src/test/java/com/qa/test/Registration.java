@@ -1,9 +1,11 @@
 package com.qa.test;
 
+import org.testng.annotations.Test;
+
 public class Registration {
 	
-	
-	public void TC001() {
+	@Test
+	public void verifyRegistrationLink() {
 		//Code to Click on Registration Page
 	}
 

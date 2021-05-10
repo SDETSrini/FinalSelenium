@@ -13,7 +13,7 @@ public class HomePage extends Base {
 //	Verify that when user lands on HomePage , Page Title is displayed and it should be 
 //	"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in"
 	@Test
-	public void TC001()
+	public void verifyHomePageTitle()
 	{
 		 browserSetup();
 		 passSiteURL();
@@ -24,7 +24,7 @@ public class HomePage extends Base {
 	}
 	
 	@Test
-	public void TC002()
+	public void verifyHomePageLogo()
 	{
 		
 		
