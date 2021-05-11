@@ -10,7 +10,7 @@ public class Search  extends Base{
 	
 	
 	
-	@Test
+	
 	public void verifySearchResult()
 	{
 		browserSetup();
@@ -31,9 +31,11 @@ public class Search  extends Base{
 		passSiteURL();
 		
 		//Code to Select the Value from the dropdown as Books
-		Select value = new Select(driver.findElement(By.id("searchDropdownBox")));
-		value.selectByValue("Books");
-//		value.selectByIndex(11);
+//		Select value = new Select(driver.findElement(By.id("searchDropdownBox")));
+//		value.selectByValue("Books");
+////		value.selectByIndex(11);
+		
+		driver.findElement(By.id("searchDropdownBox")).sendKeys("Books");
 		
 		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Java");
 		driver.findElement(By.id("nav-search-submit-button")).click();
