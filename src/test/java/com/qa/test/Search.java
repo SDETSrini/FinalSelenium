@@ -40,7 +40,9 @@ public class Search  extends Base{
 		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Java");
 		driver.findElement(By.id("nav-search-submit-button")).click();
 		String SearchResultPageTitle  = driver.getTitle();
-		//Write code to check whether the SearchResult Page contains the keyword	 
+		//Write code to check whether the SearchResult Page contains the keyword	
+		System.out.println("Search Result page is :" + SearchResultPageTitle);
+		
 		browserClose();
 	}
 	
