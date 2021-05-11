@@ -1,5 +1,6 @@
 package com.qa.test;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
@@ -8,7 +9,7 @@ import com.qa.core.Base;
 
 public class Search  extends Base{
 	
-	
+	String ActualSearchResultPage = "Java | Test";
 	
 	
 	public void verifySearchResult()
@@ -40,7 +41,8 @@ public class Search  extends Base{
 		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Java");
 		driver.findElement(By.id("nav-search-submit-button")).click();
 		String SearchResultPageTitle  = driver.getTitle();
-		//Write code to check whether the SearchResult Page contains the keyword	 
+		//Write code to check whether the SearchResult Page contains the keyword
+		Assert.assertEquals(SearchResultPageTitle, ActualSearchResultPage);
 		browserClose();
 	}
 	
