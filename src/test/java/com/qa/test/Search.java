@@ -1,6 +1,9 @@
 package com.qa.test;
 
+
 //this is an issue regarding test ng due to mismatch import org.junit.Assert;
+
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -10,7 +13,8 @@ import com.qa.core.Base;
 
 public class Search  extends Base{
 	
-	String ActualSearchResultPage = "Java | Test";
+	String ActualSearchResultPage = "Amazon.in : Java";
+
 	
 	
 	public void verifySearchResult()
