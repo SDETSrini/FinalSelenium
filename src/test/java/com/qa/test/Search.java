@@ -1,5 +1,9 @@
 package com.qa.test;
 
+
+//this is an issue regarding test ng due to mismatch import org.junit.Assert;
+
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -48,7 +52,9 @@ public class Search  extends Base{
 		System.out.println("Search Result page is :" + SearchResultPageTitle);
 
 		//Write code to check whether the SearchResult Page contains the keyword
+		
 		Assert.assertEquals(SearchResultPageTitle, ActualSearchResultPage);
+		
 
 		browserClose();
 	}
