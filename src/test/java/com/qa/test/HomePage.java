@@ -1,5 +1,6 @@
 package com.qa.test;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.qa.core.Base;
@@ -18,7 +19,7 @@ public class HomePage extends Base {
 		 browserSetup();
 		 passSiteURL();
 		 String ActualHomePageTitle  =driver.getTitle();
-		 //do an assertion		 
+		 Assert.assertEquals(ActualHomePageTitle, ExpectedHomePageTitle);
 		 browserClose();
 		 
 	}
