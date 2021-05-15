@@ -31,20 +31,24 @@ public class Search  extends Base{
 	}
 	
 	@Test
-	public void verifySearchResultusingDropdown()
+	public void verifySearchResultusingDropdown() throws InterruptedException
 	{
 		
 		browserSetup();
 		passSiteURL();
 		
 		//Code to Select the Value from the dropdown as Books
-//		Select value = new Select(driver.findElement(By.id("searchDropdownBox")));
-//		value.selectByValue("Books");
-////		value.selectByIndex(11);
+		Select value = new Select(driver.findElement(By.id("searchDropdownBox")));
+//		value.selectByVisibleText("Books");
+	
+		value.selectByIndex(11);
+		Thread.sleep(5000);
 		
-		driver.findElement(By.id("searchDropdownBox")).sendKeys("Books");
+//		driver.findElement(By.id("searchDropdownBox")).sendKeys("Books");
 		
 		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Java");
+		
+		Thread.sleep(5000);
 		driver.findElement(By.id("nav-search-submit-button")).click();
 		String SearchResultPageTitle  = driver.getTitle();
 		
@@ -58,6 +62,9 @@ public class Search  extends Base{
 
 		browserClose();
 	}
+	
+	
+	
 	
 	
 	public void verifySearchResultwithAuth()
