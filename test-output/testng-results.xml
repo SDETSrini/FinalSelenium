@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-10T19:20:57 IST" name="Suite" finished-at="2021-05-10T19:21:21 IST" duration-ms="24202">
+  <suite started-at="2021-05-20T19:56:18 IST" name="Regression" finished-at="2021-05-20T19:56:18 IST" duration-ms="94">
     <groups>
     </groups>
-    <test started-at="2021-05-10T19:20:57 IST" name="Test" finished-at="2021-05-10T19:21:21 IST" duration-ms="24202">
-      <class name="com.qa.test.HomePage">
-        <test-method signature="verifyHomePageLogo()[pri:0, instance:com.qa.test.HomePage@26275bef]" started-at="2021-05-10T19:20:57 IST" name="verifyHomePageLogo" finished-at="2021-05-10T19:20:57 IST" duration-ms="13" status="PASS">
+    <test started-at="2021-05-20T19:56:18 IST" name="Test" finished-at="2021-05-20T19:56:18 IST" duration-ms="94">
+      <class name="com.qa.test.testNGExample">
+        <test-method signature="Search_ResultPage_TestCase001()[pri:0, instance:com.qa.test.testNGExample@10959ece]" started-at="2021-05-20T19:56:18 IST" name="Search_ResultPage_TestCase001" finished-at="2021-05-20T19:56:18 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageLogo -->
-        <test-method signature="verifyHomePageTitle()[pri:0, instance:com.qa.test.HomePage@26275bef]" started-at="2021-05-10T19:20:57 IST" name="verifyHomePageTitle" finished-at="2021-05-10T19:21:21 IST" duration-ms="24109" status="PASS">
+        </test-method> <!-- Search_ResultPage_TestCase001 -->
+      </class> <!-- com.qa.test.testNGExample -->
+      <class name="com.qa.test.testNGSession">
+        <test-method signature="HomePage_Carousel_TestCase003()[pri:0, instance:com.qa.test.testNGSession@68c72235]" started-at="2021-05-20T19:56:18 IST" name="HomePage_Carousel_TestCase003" finished-at="2021-05-20T19:56:18 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageTitle -->
-      </class> <!-- com.qa.test.HomePage -->
-      <class name="com.qa.test.Registration">
-        <test-method signature="verifyRegistrationLink()[pri:0, instance:com.qa.test.Registration@7690781]" started-at="2021-05-10T19:21:21 IST" name="verifyRegistrationLink" finished-at="2021-05-10T19:21:21 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- HomePage_Carousel_TestCase003 -->
+        <test-method signature="HomePage_Search_TestCase004()[pri:0, instance:com.qa.test.testNGSession@68c72235]" started-at="2021-05-20T19:56:18 IST" name="HomePage_Search_TestCase004" finished-at="2021-05-20T19:56:18 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyRegistrationLink -->
-      </class> <!-- com.qa.test.Registration -->
+        </test-method> <!-- HomePage_Search_TestCase004 -->
+      </class> <!-- com.qa.test.testNGSession -->
     </test> <!-- Test -->
-  </suite> <!-- Suite -->
+  </suite> <!-- Regression -->
 </testng-results>

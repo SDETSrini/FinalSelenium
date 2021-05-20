@@ -5,12 +5,17 @@
 	<listeners>
 		<listener class-name="com.qa.reports.ExtentReporterNG" />
 	</listeners>
+	
+	
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="com.qa.test.HomePage" />
-			<class name="com.qa.test.Search" />
+			<class name="com.qa.test.testNGSession" />
+			<class name="com.qa.test.testNGExample" />
 		</classes>
 
 
 	</test> <!-- Test -->
+	
+	
+	
 </suite> <!-- Suite -->
