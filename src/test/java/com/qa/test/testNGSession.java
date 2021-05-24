@@ -37,7 +37,7 @@ public class testNGSession {
 //	}
 	
 	
-	@Test
+	@Test(groups= {"Regression"})
 	public void HomePage_Header_TestCase001()
 	{
 		System.out.println("First Test Case is Executed");

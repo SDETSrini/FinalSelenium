@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-         <class name="com.qa.test.testNGSession"/>
+         <class name="com.qa.test.HomePage"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -2,6 +2,10 @@ package com.qa.test;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+
+import java.util.List;
+import java.util.Set;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -13,8 +17,8 @@ import org.testng.annotations.Test;
 import com.qa.core.Base;
 
 public class HomePage extends Base {
-	
-	//OR
+
+	// OR
 	String ExpectedHomePageTitle = "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in";
 	String newURL = "https://www.facebook.com";
 
@@ -53,7 +57,6 @@ public class HomePage extends Base {
 
 	}
 
-	
 	public void verifyHomePageAlert() throws InterruptedException {
 		browserSetup();
 
@@ -80,30 +83,102 @@ public class HomePage extends Base {
 	}
 
 	// Handle Menu
-	@Test
+
 	public void verifyHomePageMenu() throws InterruptedException {
-		
 
 		browserSetup();
 		driver.get("https://www.timberland.co.uk");
 
-//Close Cookie consent
 		driver.findElement(By.id("onetrust-accept-btn-handler")).click();
 
-//		driver.switchTo().defaultContent();
+		Thread.sleep(3000);
 
-//Close Welcome to Timberland PopuP
-//		driver.findElement(By.xpath("//a[@id = 'geo_popup_close']")).click();
+		driver.findElement(By.id("geo_popup_close")).click();
+
+		// Handle Menu
+		Actions action = new Actions(driver);
+		action.moveToElement(driver.findElement(By.xpath("//*[@data-navigation = 'men']"))).build().perform();
+
+		Thread.sleep(3000);
+
+		// Click on Menu - Men- Shirts
+		driver.findElement(By.linkText("Shirts")).click();
+
+		Thread.sleep(3000);
 		
-		driver.findElement(By.xpath("//*[@class='icon-close']")).click();
-
-
-		driver.switchTo().defaultContent();
-
-		WebElement men = driver.findElement(By.xpath("//a[@data-navigation = 'men']"));
-
-		Actions action = new Actions((WebDriver) men);
-
-		action.moveToElement(driver.findElement(By.linkText("Shirts"))).build().perform();
+		browserClose();
 	}
+
+	
+	public void verifyHomePageFindElements() throws InterruptedException {
+
+		browserSetup();
+		passSiteURL();
+
+		System.out.println("Test Execution Started!!!");
+
+		Thread.sleep(3000);
+
+		List<WebElement> li = driver.findElements(By.tagName("a"));
+
+		Thread.sleep(3000);
+
+		int count = li.size();
+
+		System.out.println("Count of values on the page is " + count);
+
+		for (int i = 0; i < count; i++) {
+			System.out.println(li.get(i).getText());
+
+		}
+		
+		browserClose();
+
+	}
+
+	@Test
+	public void verifyHomePageWindow() throws InterruptedException {
+		
+		browserSetup();
+		passSiteURL();
+
+		System.out.println("Test Execution Started!!!");
+				
+		String parent = driver.getWindowHandle();
+		System.out.println("Parent window id is " + parent);
+
+		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Java");
+
+		driver.findElement(By.id("nav-search-submit-button")).click();
+
+		driver.findElement(By.xpath("//*[@class = 'a-size-medium a-color-base a-text-normal']")).click();
+
+		Thread.sleep(3000);
+
+		Set<String> totalwindow = driver.getWindowHandles();
+
+		int size = totalwindow.size();
+
+		for (String child : totalwindow) {
+
+			if (!parent.equalsIgnoreCase(child)) {
+
+				String secondwindow = child;
+
+				driver.switchTo().window(secondwindow);
+
+				driver.findElement(By.id("add-to-cart-button")).click();
+
+				driver.close();
+			}
+		}
+
+		Thread.sleep(3000);
+		
+		browserClose();
+
+	}
+	
+	
+
 }
