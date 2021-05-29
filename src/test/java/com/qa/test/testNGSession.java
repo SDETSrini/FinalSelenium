@@ -40,28 +40,28 @@ public class testNGSession {
 	@Test(groups= {"Regression"})
 	public void HomePage_Header_TestCase001()
 	{
-		System.out.println("First Test Case is Executed");
+		System.out.println("First Test Case is Executed" +Thread.currentThread().getId());
 	}
 	
 	
 	@Test
 	public void HomePage_Header_TestCase002()
 	{
-		System.out.println("Second Test Case is Executed");
+		System.out.println("Second Test Case is Executed"  +Thread.currentThread().getId());
 	}
 	
 	
 	@Test
 	public void HomePage_Carousel_TestCase003()
 	{
-		System.out.println("Third Test Case is Executed");
+		System.out.println("Third Test Case is Executed" +Thread.currentThread().getId());
 	}
 	
 	
 	@Test
 	public void HomePage_Search_TestCase004()
 	{
-		System.out.println("Fourth Test Case is Executed");
+		System.out.println("Fourth Test Case is Executed" +Thread.currentThread().getId());
 	}
 
 }

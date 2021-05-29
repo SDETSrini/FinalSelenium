@@ -1,89 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-24T19:46:40 IST" name="Suite" finished-at="2021-05-24T19:46:41 IST" duration-ms="102">
+  <suite started-at="2021-05-29T18:59:37 IST" name="Suite" finished-at="2021-05-29T19:00:06 IST" duration-ms="29123">
     <groups>
-      <group name="Regression">
-        <method signature="FlipkartHomePage.FlipKart_HomePage_TestCase001()[pri:0, instance:com.qa.newtest.FlipkartHomePage@2cd2a21f]" name="FlipKart_HomePage_TestCase001" class="com.qa.newtest.FlipkartHomePage"/>
-        <method signature="testNGSession.HomePage_Header_TestCase001()[pri:0, instance:com.qa.test.testNGSession@3d1cfad4]" name="HomePage_Header_TestCase001" class="com.qa.test.testNGSession"/>
-      </group> <!-- Regression -->
     </groups>
-    <test started-at="2021-05-24T19:46:40 IST" name="Test" finished-at="2021-05-24T19:46:41 IST" duration-ms="102">
-      <class name="com.qa.test.testNGExample">
-        <test-method signature="Search_ResultPage_TestCase001()[pri:0, instance:com.qa.test.testNGExample@62230c58]" started-at="2021-05-24T19:46:41 IST" name="Search_ResultPage_TestCase001" finished-at="2021-05-24T19:46:41 IST" duration-ms="2" status="PASS">
+    <test started-at="2021-05-29T18:59:37 IST" name="Test" finished-at="2021-05-29T19:00:06 IST" duration-ms="29123">
+      <class name="com.qa.test.ExampleWait">
+        <test-method signature="ExplicitWaitExample()[pri:0, instance:com.qa.test.ExampleWait@3d1cfad4]" started-at="2021-05-29T18:59:37 IST" name="ExplicitWaitExample" finished-at="2021-05-29T19:00:06 IST" duration-ms="29084" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Search_ResultPage_TestCase001 -->
-      </class> <!-- com.qa.test.testNGExample -->
-      <class name="com.qa.newtest.FlipkartHomePage">
-        <test-method signature="FlipKart_HomePage_TestCase001()[pri:0, instance:com.qa.newtest.FlipkartHomePage@2cd2a21f]" started-at="2021-05-24T19:46:41 IST" name="FlipKart_HomePage_TestCase001" finished-at="2021-05-24T19:46:41 IST" duration-ms="5" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [14] but found [12]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [14] but found [12]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:907)
-at org.testng.Assert.assertEquals(Assert.java:917)
-at com.qa.newtest.FlipkartHomePage.FlipKart_HomePage_TestCase001(FlipkartHomePage.java:16)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FlipKart_HomePage_TestCase001 -->
-      </class> <!-- com.qa.newtest.FlipkartHomePage -->
-      <class name="com.qa.test.testNGSession">
-        <test-method signature="HomePage_Carousel_TestCase003()[pri:0, instance:com.qa.test.testNGSession@3d1cfad4]" started-at="2021-05-24T19:46:41 IST" name="HomePage_Carousel_TestCase003" finished-at="2021-05-24T19:46:41 IST" duration-ms="17" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HomePage_Carousel_TestCase003 -->
-        <test-method signature="HomePage_Header_TestCase001()[pri:0, instance:com.qa.test.testNGSession@3d1cfad4]" started-at="2021-05-24T19:46:41 IST" name="HomePage_Header_TestCase001" finished-at="2021-05-24T19:46:41 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HomePage_Header_TestCase001 -->
-        <test-method signature="HomePage_Header_TestCase002()[pri:0, instance:com.qa.test.testNGSession@3d1cfad4]" started-at="2021-05-24T19:46:41 IST" name="HomePage_Header_TestCase002" finished-at="2021-05-24T19:46:41 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HomePage_Header_TestCase002 -->
-        <test-method signature="HomePage_Search_TestCase004()[pri:0, instance:com.qa.test.testNGSession@3d1cfad4]" started-at="2021-05-24T19:46:41 IST" name="HomePage_Search_TestCase004" finished-at="2021-05-24T19:46:41 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HomePage_Search_TestCase004 -->
-      </class> <!-- com.qa.test.testNGSession -->
+        </test-method> <!-- ExplicitWaitExample -->
+      </class> <!-- com.qa.test.ExampleWait -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

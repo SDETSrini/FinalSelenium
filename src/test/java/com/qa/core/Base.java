@@ -18,7 +18,7 @@ public class Base {
 		driver = new ChromeDriver(); // Launch
 
 //		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-//		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
 		driver.manage().deleteAllCookies(); // Delete all the cookies
 

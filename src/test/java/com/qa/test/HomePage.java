@@ -96,7 +96,8 @@ public class HomePage extends Base {
 		driver.findElement(By.id("geo_popup_close")).click();
 
 		// Handle Menu
-		Actions action = new Actions(driver);
+		Actions action = new Actions(driver);	
+		
 		action.moveToElement(driver.findElement(By.xpath("//*[@data-navigation = 'men']"))).build().perform();
 
 		Thread.sleep(3000);
@@ -136,7 +137,7 @@ public class HomePage extends Base {
 
 	}
 
-	@Test
+	
 	public void verifyHomePageWindow() throws InterruptedException {
 		
 		browserSetup();

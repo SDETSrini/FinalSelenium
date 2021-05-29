@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\srini\git\FinalSelenium\Listeners.xml</span>
+                    <span>C:\Users\srini\git\FinalSelenium\testng2.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.qa.newtest.FlipkartHomePage" class="method navigator-link" hash-for-method="FlipKart_HomePage_TestCase001">FlipKart_HomePage_TestCase001</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,27 +104,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.qa.test.testNGSession" class="method navigator-link" hash-for-method="HomePage_Carousel_TestCase003">HomePage_Carousel_TestCase003</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.qa.test.testNGSession" class="method navigator-link" hash-for-method="HomePage_Header_TestCase001">HomePage_Header_TestCase001</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.qa.test.testNGSession" class="method navigator-link" hash-for-method="HomePage_Header_TestCase002">HomePage_Header_TestCase002</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.qa.test.testNGSession" class="method navigator-link" hash-for-method="HomePage_Search_TestCase004">HomePage_Search_TestCase004</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.qa.test.testNGExample" class="method navigator-link" hash-for-method="Search_ResultPage_TestCase001">Search_ResultPage_TestCase001</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.qa.test.ExampleWait" class="method navigator-link" hash-for-method="ExplicitWaitExample">ExplicitWaitExample</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -153,73 +119,17 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.qa.newtest.FlipkartHomePage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="FlipKart_HomePage_TestCase001">
-                  </a> <!-- FlipKart_HomePage_TestCase001 -->
-                  <span class="method-name">FlipKart_HomePage_TestCase001</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [14] but found [12]
-	at com.qa.newtest.FlipkartHomePage.FlipKart_HomePage_TestCase001(FlipkartHomePage.java:16)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.qa.test.testNGSession</span>
+              <span class="class-name">com.qa.test.ExampleWait</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="HomePage_Carousel_TestCase003">
-                  </a> <!-- HomePage_Carousel_TestCase003 -->
-                  <span class="method-name">HomePage_Carousel_TestCase003</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="HomePage_Header_TestCase001">
-                  </a> <!-- HomePage_Header_TestCase001 -->
-                  <span class="method-name">HomePage_Header_TestCase001</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="HomePage_Header_TestCase002">
-                  </a> <!-- HomePage_Header_TestCase002 -->
-                  <span class="method-name">HomePage_Header_TestCase002</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="HomePage_Search_TestCase004">
-                  </a> <!-- HomePage_Search_TestCase004 -->
-                  <span class="method-name">HomePage_Search_TestCase004</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.test.testNGExample</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Search_ResultPage_TestCase001">
-                  </a> <!-- Search_ResultPage_TestCase001 -->
-                  <span class="method-name">Search_ResultPage_TestCase001</span>
+                  <a name="ExplicitWaitExample">
+                  </a> <!-- ExplicitWaitExample -->
+                  <span class="method-name">ExplicitWaitExample</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -227,7 +137,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\srini\git\FinalSelenium\Listeners.xml</span>
+            <span class="header-content">C:\Users\srini\git\FinalSelenium\testng2.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -235,13 +145,11 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.qa.test.MyListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.qa.reports.ExtentReporterNG&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qa.test.testNGSession&quot;/&gt;
-      &lt;class name=&quot;com.qa.test.testNGExample&quot;/&gt;
-      &lt;class name=&quot;com.qa.newtest.FlipkartHomePage&quot;/&gt;
+      &lt;class name=&quot;com.qa.test.ExampleWait&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -255,7 +163,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -265,18 +173,6 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">Regression</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">FlipKart_HomePage_TestCase001</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">HomePage_Header_TestCase001</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -293,36 +189,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'HomePage_Carousel_TestCase003')
-data.setCell(0, 2, 'com.qa.test.testNGSession')
-data.setCell(0, 3, 17);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'FlipKart_HomePage_TestCase001')
-data.setCell(1, 2, 'com.qa.newtest.FlipkartHomePage')
-data.setCell(1, 3, 5);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'HomePage_Header_TestCase002')
-data.setCell(2, 2, 'com.qa.test.testNGSession')
-data.setCell(2, 3, 4);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'HomePage_Search_TestCase004')
-data.setCell(3, 2, 'com.qa.test.testNGSession')
-data.setCell(3, 3, 2);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Search_ResultPage_TestCase001')
-data.setCell(4, 2, 'com.qa.test.testNGExample')
-data.setCell(4, 3, 2);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'HomePage_Header_TestCase001')
-data.setCell(5, 2, 'com.qa.test.testNGSession')
-data.setCell(5, 3, 1);
+data.setCell(0, 1, 'ExplicitWaitExample')
+data.setCell(0, 2, 'com.qa.test.ExampleWait')
+data.setCell(0, 3, 29084);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 31 ms</span>
+              <span class="suite-total-time">Total running time: 29 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -348,38 +224,10 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.test.testNGSession</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.test.ExampleWait</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">HomePage_Carousel_TestCase003</span>
+                <span class="method-name">ExplicitWaitExample</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">HomePage_Header_TestCase001</span>
-                <span class="method-start">22 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">HomePage_Header_TestCase002</span>
-                <span class="method-start">25 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">HomePage_Search_TestCase004</span>
-                <span class="method-start">34 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.test.testNGExample</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">Search_ResultPage_TestCase001</span>
-                <span class="method-start">47 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.newtest.FlipkartHomePage</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">FlipKart_HomePage_TestCase001</span>
-                <span class="method-start">52 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
